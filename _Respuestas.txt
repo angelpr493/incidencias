@@ -1,0 +1,41 @@
+1.	Es la utilización* de módulos o archivos externos para su consumo dentro de una clase. Tipos:
+a.	Pre, para preparar antes de la ejecución del programa
+b.	En vivo, durante la ejecución del programa
+c.	Post, para la ejecución al finalizar el programa
+2.	Modelos:
+a.	MVC (modelo vista controlador), para separar la funcionalidad y reglas de negocio de las capas de consumo de recursos y la parte visual o gráfica.
+b.	Servidor-repositorio , para separar las funcionalidades del consumo de base de datos y la traducción de campos que sean necesarios; consumiendo solo la información necesaria de los orígenes de datos.
+3.	Arquitectura
+a.	Core, JDK de Java
+b.	Clases, abstracción dentro de nuestro código.
+c.	Dependencias, funcionalidades compatibles que se van importando conforme se van requiriendo.
+d.	Beans, Clases y métodos disponibles para inyectar posteriormente
+4.	Anotaciones
+a.	@Autowired, inyecta las dependencias que hemos creado para su consumo
+b.	@Qualifier,
+c.	@PostConstruct. Serializar el consumo de métodos, en este caso define cual es el método que se ejecuta después 
+d.	@PreDestroy. Eliminación de memoria cache del método y su contenido
+e.	@Required. uso obligatorio del método al consumir la clase
+f.	@Bean.  Se define así la clase para facilitar su inyección 
+g.	@Configuration. Definición de un fragmento que define una configuración especifica
+h.	@Transactional. Se utiliza al consumir un origen de datos y definición de sus propiedades.
+i.	@Secured, 
+j.	@RollesAllowed, 
+k.	@ManagedResource, 
+l.	@ManageAttribute. Configurar atributos del método
+m.	@ManageOperation, 
+n.	@Cacheable.
+5.	Para transformar el tipado de datos dentro de un objeto en otro
+6.	Para definir una …
+7.	…
+8.	Es la arquitectura en la que existen distintos servicios de manera independiente, en la que el performance y rendimiento de cada una no afecta a otra, cada microservicio tiene una tarea muy específica. Si un microservicio se “daña”, no afecta a los demás
+9.	Componentes
+a.	Spring CloudConfig. Definición del comportamiento de la capa de seguridad 
+b.	Eurka 
+c.	Ribbon 
+d.	Hystrix 
+e.	Zuul 
+f.	OAUT. Libreria que ofrece la capa de seguridad para consumir en nuestro servicio
+g.	SWAGGER. Documentación para el consumo de nuestro servicio, descripción de endpoints, verbos, estructura de datos, posibles datos de entrada y datos de respuesta
+h.	SPLUNK, Analizador de eventos de seguridad
+10.	WSDL…
